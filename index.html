@@ -1,0 +1,362 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Surya-M</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/bd6a507ad6.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.lr{
+	color: black;
+}
+</style>
+
+</head> 
+<body>
+
+    
+	
+    <div id="header">
+        <div class="container">
+            <nav class="colll">
+            	<div class="colll1">
+                <p class="namee">SURYA M</p>
+            </div>
+            <div class="colll2"><center>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Project</a></li>
+                    <li><a href="#certificate">Certificate</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul></center>
+            </div>
+            <div class="colll3">
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+                <!-- Light/Dark mode toggle switch -->
+                <label class="switch">
+                    <input type="checkbox" id="mode-switch" onchange="toggleMode()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            </nav>
+            <a href="#header" class="circle"><i class="fa-solid fa-angles-up up"></i></a>
+            <div class="header-text">
+                <h1>Hi, I'm Surya </h1>
+                <p>Software Developer</p><br>
+                <p class="desc">Innovative interfaces transform user interactions into delightful journeys, blending creativity with usability to ensure unforgettable experiences.
+                    <br><a href="#contact" class="btn btn2">Contact Me &nbsp &nbsp <i class="fa-regular fa-paper-plane"> </i></a></p>
+            </div>
+        </div>
+    </div>
+	<!----------------------------------About-------------------->
+
+<div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">Enthusiastic recent graduate in computer science and a passion for software development. Proficient in Java. Eager to contribute to a dynamic team and apply problem solving skills in a collaborative environment.</p>
+                    <a href="Surya_M.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="about-col-2">
+                    <div class="tab-titles">
+                        <p class="tablinks active-link" onclick="opentab(event, 'skills')"><span class="coll1">Skills</span></p>
+                        <p class="tablinks" onclick="opentab(event, 'education')"><span class="coll2">Education</span></p>
+                        <p class="tablinks" onclick="opentab(event, 'experience')"><span class="coll3">Experience</span></p>
+                    </div>
+
+                    <div class="tabcontents active-tab" id="skills">
+                        <div class="skills__container container grid">
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/java.png" alt="angular">
+                                     <div class="skills__container-name">Java</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/python.png" alt="angular">
+                                     <div class="skills__container-name">Python</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/php.png" alt="angular">
+                                     <div class="skills__container-name">PHP</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img img11" src="images/javascript.png" alt="angular">
+                                     <div class="skills__container-name">Java Script</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/bootstrap.png" alt="angular">
+                                     <div class="skills__container-name">Bootstrap</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/spring boot.png" alt="angular">
+                                     <div class="skills__container-name">SpringBoot</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/html.svg" alt="angular">
+                                     <div class="skills__container-name">HTML</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/css.svg" alt="angular">
+                                     <div class="skills__container-name">CSS</div>
+                            </div>
+
+                            <div class="skills__container-box">
+                                <img class="skills__container-img" src="images/mysql.png" alt="angular">
+                                     <div class="skills__container-name">MySQL</div>
+                            </div>
+
+        
+                        </div>
+
+                    </div>
+
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li>Sri Kaliswari College<br>B.Sc. (Computer Science)<br>Year : 2021-2024</li><br>
+                            <li>Baren Bruck Hr. Sec. School<br>HSC<br>Year : 2021</li><br>
+                            <li>Baren Bruck Hr. Sec. School<br>SSLC<br>Year : 2019</li><br>
+                        </ul>
+                    </div>
+
+                    <div class="tabcontents" id="experience">
+                        <p class="descrip">Intern - Graphic Designer<br>Royal Printers and Traders, Tenkasi<br><br>Specialized in designing flex banners and visiting cards, refining graphic design skills.Collaborated closely with clients to deliver high-quality designs, ensuring satisfaction. Developed expertise in graphic design through hands-on experience and client interactions.Contributed to the successful completion of various design projects, meeting client requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var tablinks = document.getElementsByClassName("tablinks");
+        var tabcontents = document.getElementsByClassName("tabcontents");
+
+        function opentab(event, tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+<! ---------------------------Projects----------------->
+<div id="services">
+	<div class="container">
+		<h1 class="sub-title">My Project</h1>
+			<div class="services-list">
+				<div>
+					
+					<h2><center>Bike Sales and Service</center></h2>
+					<p><center>PHP-based online platform for selling pre-owned bikes and offering water and repair services. Features a user-friendly interface and dedicated admin pages for management.<br><br>Tech Stacks<br>HTML | CSS | PHP | My SQL</center></p>
+					
+				</div>
+
+				
+				<div>
+					<h2><center>Personal Portfolio</center></h2>
+					<p><center>My Personal portfolio website to discover a showcase of my skills, projects, and certificates, reflecting my passion for innovation and creativity.<br><br>Tech Stacks<br>HTML | CSS | Java Script</center></p>
+
+					
+				</div>
+
+			</div>
+		
+	</div>
+</div>
+
+<! ---------------------------Certificate----------------->
+<div id="certificate">
+	<div class="container">
+		<h1 class="sub-title">Certificate</h1>
+		
+<div>
+					
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  
+  <img class="mySlides" src="img2.jpg" style="width:100%">
+  <img class="mySlides" src="img3.jpg" style="width:100%">
+  <img class="mySlides" src="img4.jpg" style="width:100%">
+  <img class="mySlides" src="img5.jpg" style="width:100%">
+  <img class="mySlides" src="img1.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="lr"><div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+				</div>
+			</div>		
+			
+	
+</div>
+
+<!------------Contact--------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-paper-plane"></i>suriiyaganesan@gmail.com</p>
+				<p><i class="fa-solid fa-phone"></i>+91 8925169229</p><br><br>
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/suriiya-m/" target="_blank"><i class="fab fa-linkedin"></i></a>
+					<a href="mailto:suriiyaganesan@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+					<a href="https://github.com/Suriiya-M"><i class="fab fa-github"></i></a>
+					
+					
+					
+				</div>
+				
+			</div>
+
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="Email" placeholder="Your Email" required>
+					<textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+				<span id="msgg"></span>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+	<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzk_yOGn8apQ2uygIr171mLWvrRt7aHGDumP-ER1Pq9G9WSiZ3hSUQCFO4eLKar8z19/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msgg = document.getElementById("msgg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+	      msgg.innerHTML ="Your Message Sent Successfully"
+	      setTimeout(function(){
+		      msgg.innerHTML =""
+	      },5000)
+	      form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+	
+
+	<script type="text/javascript">
+		var sidemenu = document.getElementById("sidemenu");
+		function openmenu()
+		{
+			sidemenu.style.right = "0";
+		}
+		function closemenu()
+		{
+			sidemenu.style.right = "-200px";
+		}
+	</script>
+
+
+
+
+
+
+
+<script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+    const switchToggle = document.getElementById('mode-switch');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme) {
+        document.body.classList.add(currentTheme);
+
+        if (currentTheme === 'light-mode') {
+            switchToggle.checked = true;
+        }
+    }
+
+    switchToggle.addEventListener('change', function() {
+        if (switchToggle.checked) {
+            document.body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light-mode');
+        } else {
+            document.body.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark-mode');
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
