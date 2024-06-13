@@ -633,7 +633,7 @@ nav .fas
 	.skills__container {
     display: grid;
     gap: 1rem;
-    
+    padding :5px;
     grid-template-columns: repeat(3, 1fr);
 }
 #about img {
